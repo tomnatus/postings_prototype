@@ -12,7 +12,7 @@ class PostController extends Controller
     }
 
     public function store(Request $request) {
-        // validatie komt niet door in de view
+        
         $this->validate($request , [
             'body'=> 'required'
         ]);

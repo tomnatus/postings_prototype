@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
+    //mogen enkel getoond worden als je nog niet bent ingelogd
+    public function __construct() {
+        $this->middleware(['guest']);
+    }
 
     public function index() {
         return view('auth.register');

@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
-    //
+    //krijg je allleen te zien als je nog niet bent ingelogd
+    public function __construct() {
+        $this->middleware(['guest']);
+    }
     public function index(){
         
         return view('auth.login');

@@ -14,9 +14,9 @@
         <a href="{{ route('home') }}" class="p-3">Home</a>
       </li>
       <li>
-        <a href="" class="p-3">Dashboard</a>
+        <a href="{{ route('overzicht') }}" class="p-3">Overzicht</a>
       </li>
-      <li><a href="" class="p-3"">Post</a></li>
+      <li><a href="{{ route('posts') }}" class="p-3"">Post</a></li>
     </ul>
     <ul class="flex items-center ">
       @auth
