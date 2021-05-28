@@ -11,8 +11,7 @@ class OverzichtController extends Controller
     }
 
     public function index() {
-        //debugging 
-        // dd(auth()->user());
+       
         return view('overzicht');
     }
 }
